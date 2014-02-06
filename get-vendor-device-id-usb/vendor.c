@@ -3,6 +3,7 @@
 #include <linux/usb.h>
 #include <linux/usb/hcd.h>
 #include <linux/list.h>
+#include <linux/version.h>
 
 MODULE_LICENSE("GPL");
 
@@ -19,7 +20,7 @@ int ourinitmodule(void)
 		printk(KERN_ALERT "\n Vendor Id:%x, Product Id:%x\n", \
 			dev->descriptor.idVendor, dev->descriptor.idProduct);
 
-		#if 0 //Uncomment this if your kernel version is more than 3.5
+		#if LINUX_VERSION_CODE >= KERNEL_VERSION(3,7,0)
 		usb_hub_for_each_child(dev, chix, childdev)
 		{
 			if(childdev)
