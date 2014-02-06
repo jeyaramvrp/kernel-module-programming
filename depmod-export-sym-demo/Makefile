@@ -1,5 +1,5 @@
-obj-m += jayone.o
-obj-m += jaytwo.o
+obj-m += moduleone.o
+obj-m += moduletwo.o
 
 all:
 	make -C /lib/modules/$(shell uname -r)/build  M=$(PWD) modules
@@ -8,6 +8,6 @@ all:
 
 clean: 
 	make -C /lib/modules/$(shell uname -r)/build  M=$(PWD) clean
-	sudo rm  /lib/modules/$(shell uname -r)/jayone.ko
-	sudo rm  /lib/modules/$(shell uname -r)/jaytwo.ko
+	sudo rm  /lib/modules/$(shell uname -r)/moduleone.ko
+	sudo rm  /lib/modules/$(shell uname -r)/moduletwo.ko
 	sudo depmod -a
