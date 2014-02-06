@@ -1,0 +1,2 @@
+gcc -fPIC -g -c -Wall mylib.c
+gcc -shared -W1,-soname, -o libmylib.so mylib.o -lc
