@@ -33,7 +33,7 @@ int ourinitmodule(void)
 void ourcleanupmodule(void)
 {
 	unregister_chrdev(major, DRV_NAME);
-	printk(KERN_ALERT "\n Hello Jay, Thanks....Exiting Application. \n");
+	printk(KERN_ALERT "\n Thanks....exiting sample driver \n");
 }
 
 static long sample_ioctl(struct file *file, unsigned int cmd, unsigned long arg)
