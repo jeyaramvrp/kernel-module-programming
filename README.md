@@ -1,4 +1,4 @@
-kernel-module-programming(Under Editing)
+kernel-module-programming(Editing)
 =========================
 
 Index
