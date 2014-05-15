@@ -5,7 +5,7 @@
 MODULE_LICENSE("GPL");
 int flag = 1;
 
-//Fake device
+//Fake device.
 int tempdev = 0;
 
 irqreturn_t sampleISR(int irq, void *dev_id)

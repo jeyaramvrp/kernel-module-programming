@@ -1,8 +1,0 @@
-A sample kernel module program:
-
-Steps to compile and run
-
-1. To compile use:		$make
-2. To load the module use: 	$make load
-3. To unload the module use: 	$make unload
-4. To clean use: 		$make clean
